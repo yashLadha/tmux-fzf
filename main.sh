@@ -10,7 +10,7 @@ fi
 CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 if [[ "$TMUX_FZF_MENU"x == ""x ]]; then
-    ITEMS_ORIGIN=$(printf "session\nwindow\npane\ncommand\nkeybinding")
+    ITEMS_ORIGIN=$(printf "pane\nsession\nwindow\ncommand\nkeybinding")
 else
     ITEMS_ORIGIN=$(printf "menu\nsession\nwindow\npane\ncommand\nkeybinding")
 fi
